@@ -1,0 +1,89 @@
+@charset "UTF-8";
+/*base.scss*/
+/*ссылки на док-ю сасс
+https://sass-scss.ru/documentation/
+https://sass-lang.com/install
+*/
+::-webkit-scrollbar {
+  width: 0.1px;
+  height: 5px;
+  pacity: 0.02;
+} /* УБРАЛ ПОЛОСУ ПРОКРУТКИ С ЭКРАНА и сделал свою. 
+Когда пишу сайт, чтобы на планшете отображалось содержимое от края до края страницы 
+без зазоров, прокрутку можно отключить. И включить для красоты по готовности сайта.*/
+::-webkit-scrollbar-button {
+  height: 50px;
+  background: #42e10e;
+} /*2 - кнопка*/
+::-webkit-scrollbar-track {
+  background: #274dd7;
+} /*3 - трек */
+::-webkit-scrollbar-track-piece {
+  background: #e91e63;
+} /*4 - видимая часть трека */
+::-webkit-scrollbar-thumb {
+  background: #fbe100;
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3); /*inset 1 3 13px rgb(207 10 10 / 64%)*/
+} /*5 - ползунок */
+/*настраивает полосу прокрутки с помощью вэбкит. С этими еще не разобрался*/
+/*::-webkit-scrollbar{ width: 22px; } /*1 - вертикальный скроллбар*/
+/*::-webkit-scrollbar:horizontal{ height: 22px;  }  /*1 - горизонтальный скроллбар*/
+/*::-webkit-scrollbar-button {background :#e50845; }  /*2 - кнопка*/
+/*::-webkit-scrollbar-track {background: #008000; }  /*3 - трек */
+/*::-webkit-scrollbar-track-piece { background: #32CD32;}  /*4 - видимая часть трека */
+/*::-webkit-scrollbar-thumb {background: #322e76; border-radius: 10px;
+ -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); } /*5 - ползунок */
+/*::-webkit-scrollbar-corner {: #32CD32; }  6 - уголок */
+/*::-webkit-resizer { : #32CD32; } 7 - изменение размеров*/
+html, body {
+  box-sizing: border-box;
+  height: 100%;
+  min-height: 100%;
+  padding: 0px;
+  margin: 0px;
+  background-color: skyblue;
+  font-size: 15px;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1280px;
+  /*можно складывать цвета, 
+  просмотреть это можно в base.css, в коне цвета будет 7*/
+  height: 3rem; /*можно так писать*/
+  height: 30p; /*можно так писать*/
+  margin: 0.95rem 0;
+  background-color: #262122;
+  color: #ffffe7;
+  /*можно вычитать и прибавлять*/
+  /*умножать и делить*/
+}
+
+/* Position the tooltip */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .toolTipText {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+/*# sourceMappingURL=styles.css.map */

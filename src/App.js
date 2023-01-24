@@ -1,10 +1,17 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
+//import { Routes, Route, BrowserRouter } from 'react-router-dom'; его не устанавливал, здесьне нужен
+//он нужен для того, чтобы несколько страниц открывались в одной, не прыыгая по страницам
+
+function App() {}
+
+export default App;
+
+// этот код стоял в фигурных скобках function App() {}
+  //return (
+    //<div className="App">
+      /*<header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
@@ -17,9 +24,9 @@ function App() {
         >
           Learn React
         </a>
-      </header>
-    </div>
-  );
-}
+      </header>*/
+    //</div>
+  //);
 
-export default App;
+
+
